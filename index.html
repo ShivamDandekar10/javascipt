@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Documentation</title>
+    <link rel="stylesheet" href="demop1.css" />
+    <!-- <link rel="stylesheet" href="demop1.css" /> -->
+    <style>
+       .ram {
+            font-size: 72px;
+            background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Javascript Documentation</h1>
+        <ul>
+          <a href="#Introduction"><li>Introduction</li></a>
+          <a href="#What_you_should_already_know"
+            ><li>What you should already know</li></a
+          >
+          <a href="#JavaScript_and_Java"><li>JavaScript and Java</li></a>
+          <a href="#Hello_world"><li>Hello world</li></a>
+          <a href="#Variables"><li>Variables</li></a>
+          <a href="#data"><li>Data Types</li></a>
+          <a href="#b"><li>Operators</li></a>
+          <a href="#a"><li>If Else Statement</li></a>
+          <a href="#x"><li>Loops</li></a>
+          <a href="#y"><li>Function</li></a>
+          <a href="#z"><li>JavaScript Object</li></a>
+          <a href="#opps"><li>OOPs</li></a>
+          
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="ram">JAVASCRIPT DOCUMENTATION</h1>
+      <section id="Introduction">
+        <h2>Introduction</h2>
+        <article>
+          <p>
+            JavaScript is a cross-platform, object-oriented scripting language.
+            It is a small and lightweight language. Inside a host environment
+            (for example, a web browser), JavaScript can be connected to the
+            objects of its environment to provide programmatic control over
+            them.
+          </p>
+
+          <p>
+            JavaScript contains a standard library of objects, such as Array,
+            Date, and Math, and a core set of language elements such as
+            operators, control structures, and statements. Core JavaScript can
+            be extended for a variety of purposes by supplementing it with
+            additional objects; for example:
+          </p>
+          <ul>
+            <li>
+              Client-side JavaScript extends the core language by supplying
+              objects to control a browser and its Document Object Model (DOM).
+              For example, client-side extensions allow an application to place
+              elements on an HTML form and respond to user events such as mouse
+              clicks, form input, and page navigation.
+            </li>
+            <li>
+              Server-side JavaScript extends the core language by supplying
+              objects relevant to running JavaScript on a server. For example,
+              server-side extensions allow an application to communicate with a
+              database, provide continuity of information from one invocation to
+              another of the application, or perform file manipulations on a
+              server.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="What_you_should_already_know">
+        <h2>What you should already know</h2>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+
+          <ul>
+            <li>
+              A general understanding of the Internet and the World Wide Web
+              (WWW).
+            </li>
+            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+            <li>
+              Some programming experience. If you are new to programming, try
+              one of the tutorials linked on the main page about JavaScript.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="JavaScript_and_Java">
+        <h2>JavaScript and Java</h2>
+        <article>
+          <p>
+            JavaScript and Java are similar in some ways but fundamentally
+            different in some others. The JavaScript language resembles Java but
+            does not have Java's static typing and strong type checking.
+            JavaScript follows most Java expression syntax, naming conventions
+            and basic control-flow constructs which was the reason why it was
+            renamed from LiveScript to JavaScript.
+          </p>
+
+          <p>
+            In contrast to Java's compile-time system of classes built by
+            declarations, JavaScript supports a runtime system based on a small
+            number of data types representing numeric, Boolean, and string
+            values. JavaScript has a prototype-based object model instead of the
+            more common class-based object model. The prototype-based model
+            provides dynamic inheritance; that is, what is inherited can vary
+            for individual objects. JavaScript also supports functions without
+            any special declarative requirements. Functions can be properties of
+            objects, executing as loosely typed methods.
+          </p>
+          <p>
+            JavaScript is a very free-form language compared to Java. You do not
+            have to declare all variables, classes, and methods. You do not have
+            to be concerned with whether methods are public, private, or
+            protected, and you do not have to implement interfaces. Variables,
+            parameters, and function return types are not explicitly typed.
+          </p>
+        </article>
+      </section>
+      <section id="Hello_world">
+        <h2>Hello world</h2>
+        <article>
+          To get started with writing JavaScript, open the Scratchpad and write
+          your first "Hello world" JavaScript code:
+          <code
+            >function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");
+          </code>
+
+          Select the code in the pad and hit Ctrl+R to watch it unfold in your
+          browser!
+        </article>
+      </section>
+      <section id="Variables">
+        <h2>Variables</h2>
+        <article>
+          <p>
+            You use variables as symbolic names for values in your application.
+            The names of variables, called identifiers, conform to certain
+            rules.
+          </p>
+          <p>
+            A JavaScript identifier must start with a letter, underscore (_), or
+            dollar sign ($); subsequent characters can also be digits (0-9).
+            Because JavaScript is case sensitive, letters include the characters
+            "A" through "Z" (uppercase) and the characters "a" through "z"
+            (lowercase).
+          </p>
+          <p>
+            You can use ISO 8859-1 or Unicode letters such as å and ü in
+            identifiers. You can also use the Unicode escape sequences as
+            characters in identifiers. Some examples of legal names are
+            Number_hits, temp99, and _name.
+          </p>
+        </article>
+      </section>
+      <section id="data">
+        <h1>JavaScript Data Types</h1>
+        <p>JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.</p>
+        
+        <h2>Primitive data type</h2>
+        <p>JavaScript has five primitive data types:</p>
+        <ul>
+          <li>String - represents a sequence of characters, e.g., "hello"</li>
+          <li>Number - represents numeric values, e.g., 100</li>
+          <li>Boolean - represents a boolean value either false or true</li>
+          <li>Undefined - represents an undefined value</li>
+          <li>Null - represents null, i.e., no value at all</li>
+        </ul>
+        
+        <h2>Non-primitive data type</h2>
+        <p>The non-primitive data types in JavaScript include:</p>
+        <ul>
+          <li>Object - represents an instance through which we can access members</li>
+          <li>Array - represents a group of similar values</li>
+          <li>RegExp - represents a regular expression</li>
+          <li>Date - represents a date and time value</li>
+          <li>Function - represents a reusable block of code</li>
+        </ul>
+      </section>
+      <section id="b">
+        <h1>JavaScript Operators</h1>
+  
+        <h2>Arithmetic Operators</h2>
+        <p>
+          Arithmetic operators are used to perform mathematical calculations.
+        </p>
+        <ul>
+          <li>Addition (+): Adds two operands</li>
+          <li>Subtraction (-): Subtracts the second operand from the first</li>
+          <li>Multiplication (*): Multiplies two operands</li>
+          <li>Division (/): Divides the first operand by the second</li>
+          <li>Modulus (%): Returns the remainder after division</li>
+          <li>Increment (++): Increases the value of an operand by 1</li>
+          <li>Decrement (--): Decreases the value of an operand by 1</li>
+        </ul>
+        
+        <h2>Assignment Operators</h2>
+        <p>
+          Assignment operators are used to assign values to variables.
+        </p>
+        <ul>
+          <li>Assignment (=): Assigns a value to a variable</li>
+          <li>Addition assignment (+=): Adds the right operand to the left operand and assigns the result to the left operand</li>
+          <li>Subtraction assignment (-=): Subtracts the right operand from the left operand and assigns the result to the left operand</li>
+          <li>Multiplication assignment (*=): Multiplies the left operand by the right operand and assigns the result to the left operand</li>
+          <li>Division assignment (/=): Divides the left operand by the right operand and assigns the result to the left operand</li>
+          <li>Modulus assignment (%=): Calculates the modulus of the left operand with the right operand and assigns the result to the left operand</li>
+        </ul>
+        
+        <h2>Comparison Operators</h2>
+        <p>
+          Comparison operators are used to compare values.
+        </p>
+        <ul>
+          <li>Equal to (==): Checks if two operands are equal</li>
+          <li>Not equal to (!=): Checks if two operands are not equal</li>
+          <li>Strict equal to (===): Checks if two operands are equal in value and type</li>
+          <li>Strict not equal to (!==): Checks if two operands are not equal in value or type</li>
+          <li>Greater than (>): Checks if the left operand is greater than the right operand</li>
+          <li>Less than (<): Checks if the left operand is less than the right operand</li>
+          <li>Greater than or equal to (>=): Checks if the left operand is greater than or equal to the right operand</li>
+          <li>Less than or equal to (<=): Checks if the left operand is less than or equal to the right operand</li>
+        </ul>
+        
+        <h2>Logical Operators</h2>
+        <p>
+          Logical operators are used to perform logical operations.
+        </p>
+        <ul>
+          <li>Logical AND (&&): Returns true if both operands are true</li>
+          <li>Logical OR (||): Returns true if either of the operands is true</li>
+          <li>Logical NOT (!): Inverts the boolean value of the operand</li>
+        </ul>
+        
+        <h2>String Operators</h2>
+        <p>
+          String operators are used to manipulate strings.
+        </p>
+        <ul>
+          <li>Concatenation (+): Concatenates two strings</li>
+        </ul>
+        
+        <h2>Conditional (Ternary) Operator</h2>
+        <p>
+          The conditional operator is a shorthand way of writing if-else statements.
+        </p>
+        <ul>
+          <li>Conditional operator (condition ? expression1 : expression2): Evaluates a condition and returns expression1 if true, or expression2 if false</li>
+        </ul>
+      </section>
+
+      <section id="a">
+        <h1>JavaScript If-Else Statement</h1>
+  
+        <p>
+          The if-else statement is used in JavaScript to perform conditional execution of code blocks. It allows you to specify a block of code to be executed if a certain condition is true, and another block of code to be executed if the condition is false.
+        </p>
+        
+        <h2>Syntax:</h2>
+        <pre>
+          if (condition) {
+            // code to be executed if the condition is true
+          } else {
+            // code to be executed if the condition is false
+          }
+        </pre>
+        
+        <h2>Example:</h2>
+        <pre>
+          <code>
+            &lt;script&gt;
+              var age = 18;
+              
+              if (age >= 18) {
+                document.write("You are eligible to vote.");
+              } else {
+                document.write("You are not eligible to vote.");
+              }
+            &lt;/script&gt;
+          </code>
+        </pre>
+        
+        <p>
+          In the above example, the variable `age` is checked using the `if` condition. If the age is greater than or equal to 18, the message "You are eligible to vote" is displayed. Otherwise, the message "You are not eligible to vote" is displayed.
+        </p>
+      </section>
+  <section id="x">
+    <h2>Loops</h2>
+  <p>
+    Loops are used in JavaScript to repeatedly execute a block of code. There are three types of loops in JavaScript: <strong>for</strong>, <strong>while</strong>, and <strong>do-while</strong>.
+  </p>
+  
+  <h3>For Loop:</h3>
+  <pre>
+    <code>
+      &lt;script&gt;
+        for (var i = 0; i < 5; i++) {
+          document.write("Value of i: " + i + "&lt;br&gt;");
+        }
+      &lt;/script&gt;
+    </code>
+  </pre>
+  <p>
+    The above example demonstrates a <strong>for loop</strong> that will iterate from 0 to 4. It prints the value of `i` on each iteration.
+  </p>
+  
+  <h3>While Loop:</h3>
+  <pre>
+    <code>
+      &lt;script&gt;
+        var i = 0;
+        while (i < 5) {
+          document.write("Value of i: " + i + "&lt;br&gt;");
+          i++;
+        }
+      &lt;/script&gt;
+    </code>
+  </pre>
+  <p>
+    The above example demonstrates a <strong>while loop</strong> that will iterate as long as the condition `i < 5` is true. It prints the value of `i` on each iteration.
+  </p>
+  
+  <h3>Do-While Loop:</h3>
+  <pre>
+    <code>
+      &lt;script&gt;
+        var i = 0;
+        do {
+          document.write("Value of i: " + i + "&lt;br&gt;");
+          i++;
+        } while (i < 5);
+      &lt;/script&gt;
+    </code>
+  </pre>
+  <p>
+    The above example demonstrates a <strong>do-while loop</strong> that will execute the code block at least once, and then continue as long as the condition `i < 5` is true. It prints the value of `i` on each iteration.
+  </p>
+  
+  <h2>Functions</h2>
+  <p>
+    Functions are blocks of reusable code in JavaScript. They allow you to encapsulate a set of instructions and execute them whenever needed.
+  </p>
+  
+  <h3>Syntax:</h3>
+  <pre>
+    <code>
+      function functionName(parameter1, parameter2, ...) {
+        // code to be executed
+      }
+    </code>
+  </pre>
+  <p>
+    The above syntax demonstrates the declaration of a function named `functionName` with optional parameters.
+  </p>
+  
+  <h3>Example:</h3>
+  <pre>
+    <code>
+      &lt;script&gt;
+        function greet(name) {
+          document.write("Hello, " + name + "! Welcome to JavaScript.&lt;br&gt;");
+        }
+        
+        greet("John");
+        greet("Emily");
+      &lt;/script&gt;
+    </code>
+  </pre>
+  <p>
+    The above example demonstrates the declaration of a function named `greet` that takes a parameter `name` and prints a greeting message. The function is then called with different arguments (`"John"` and `"Emily"`) to display personalized greetings.
+  </p>
+  
+  </section>
+
+  <section id="y">
+    <h2>JavaScript Objects</h2>
+  <p>
+    JavaScript objects are used to store collections of key-value pairs. They are created using curly braces ({}) and can contain properties and methods.
+  </p>
+  
+  <h4>JavaScript Array</h4>
+  <p>
+    JavaScript arrays are used to store multiple values in a single variable. They are created using square brackets ([]) and can contain any type of data.
+  </p>
+  
+  <h4>JavaScript String</h4>
+  <p>
+    JavaScript strings are used to represent text. They are created using single or double quotes and can be manipulated using various string methods.
+  </p>
+  
+  <h4>JavaScript Date</h4>
+  <p>
+    JavaScript Date objects are used to work with dates and times. They provide methods to get and set the year, month, day, hour, minute, second, etc.
+  </p>
+  
+  <h4>JavaScript Math</h4>
+  <p>
+    JavaScript Math object provides mathematical functions and constants. It includes methods for performing various mathematical operations like rounding, random numbers, trigonometry, etc.
+  </p>
+  
+  <h4>JavaScript Number</h4>
+  <p>
+    JavaScript Number object represents numeric values. It provides methods and properties to work with numbers, perform mathematical operations, and format numeric values.
+  </p>
+  
+  <h4>JavaScript Boolean</h4>
+  <p>
+    JavaScript Boolean represents a logical value: true or false. It is used for conditional statements and logical operations.
+  </p>
+  
+  </section>
+  <section id="z">
+    <h1>JavaScript DOM (Document Object Model)</h1>
+  
+    <p>
+      The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a web page as a hierarchical tree of objects, where each object corresponds to a specific element or node in the document.
+    </p>
+    
+    <h2>getElementById</h2>
+    <p>
+      The <code>getElementById</code> method is used to retrieve an element from the DOM using its unique identifier (id).
+    </p>
+    
+    <h2>getElementsByClassName</h2>
+    <p>
+      The <code>getElementsByClassName</code> method is used to retrieve a collection of elements from the DOM that have a specific class name.
+    </p>
+    
+    <h2>getElementsByName</h2>
+    <p>
+      The <code>getElementsByName</code> method is used to retrieve a collection of elements from the DOM that have a specific name attribute.
+    </p>
+    
+    <h2>getElementsByTagName</h2>
+    <p>
+      The <code>getElementsByTagName</code> method is used to retrieve a collection of elements from the DOM that have a specific tag name.
+    </p>
+    
+    <h2>JS innerHTML property</h2>
+    <p>
+      The <code>innerHTML</code> property allows you to get or set the HTML content inside an element. It can be used to dynamically update the content of an element.
+    </p>
+    
+    <h2>JS innerText property</h2>
+    <p>
+      The <code>innerText</code> property allows you to get or set the text content inside an element. It retrieves the visible text, excluding any HTML tags.
+    </p>
+  </section id="opps">
+  <h1>JavaScript Object-Oriented Programming (OOP)</h1>
+  
+  <h2>JS Class</h2>
+  <p>
+    A <strong>class</strong> in JavaScript is a blueprint for creating objects. It defines the properties and methods that an object will have. Classes are introduced in ECMAScript 2015 (ES6) and provide a way to implement OOP concepts in JavaScript.
+  </p>
+  
+  <h2>JS Object</h2>
+  <p>
+    An <strong>object</strong> in JavaScript is an instance of a class. It represents a real-world entity with its own set of properties and behaviors. Objects are created using the <code>new</code> keyword and the class constructor.
+  </p>
+  
+  <h2>JS Prototype</h2>
+  <p>
+    The <strong>prototype</strong> in JavaScript is an object from which other objects inherit properties and methods. It is a mechanism for sharing properties and methods across multiple instances of a class.
+  </p>
+  
+  <h2>JS Constructor Method</h2>
+  <p>
+    The <strong>constructor method</strong> is a special method in a class that is executed when a new object is created. It is used to initialize the object's properties and set up its initial state.
+  </p>
+  
+  <h2>JS Instance Method</h2>
+  <p>
+    An <strong>instance method</strong> is a method defined in a class that is available on individual objects created from that class. It operates on the instance-specific data and behavior.
+  </p>
+  
+  <h2>JS Static Method</h2>
+  <p>
+    A <strong>static method</strong> is a method defined in a class that is called on the class itself, rather than on its instances. It is used for utility functions or operations that are not specific to any particular instance.
+  </p>
+  
+  <h2>JS Encapsulation</h2>
+  <p>
+    <strong>Encapsulation</strong> is a principle of OOP that involves bundling related properties and methods into a single unit, i.e., a class. It allows for data hiding and abstraction, where the internal implementation details are hidden and only the necessary interfaces are exposed.
+  </p>
+  
+  <h2>JS Inheritance</h2>
+  <p>
+    <strong>Inheritance</strong> is a mechanism that allows a class to inherit properties and methods from another class. It promotes code reuse and allows for creating specialized classes based on existing classes.
+  </p>
+  
+  <h2>JS Polymorphism</h2>
+  <p>
+    <strong>Polymorphism</strong> is a concept in OOP that allows objects of different classes to be treated as objects of a common superclass. It enables methods to be overridden in derived classes and provides flexibility in working with objects of different types through a common interface.
+  </p>
+  
+  <h2>JS Abstraction</h2>
+  <p>
+    <strong>Abstraction</strong> is a principle of OOP that focuses on providing only essential information and hiding unnecessary details. It allows for creating abstract classes and methods that define a common interface without providing concrete implementations.
+  </p>
+
+    </main>
+  </body>
+</html>
